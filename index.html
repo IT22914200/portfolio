@@ -19,8 +19,70 @@
             <li><a href="#Contact">Contact</a></li>
         </ul>
         </nav>
+        <div class="header-text">
+        <p>Frontend Developer</p>
+        <h1>Hi, I,m <span>Mihiri</span><br>Tharushika From Sri Lanka</h1>
+        </div>
+     </div>
+  </div>
+
+  <!-------------------about------------------->
+
+  <div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class= "sub-title">About Me</h1>
+                <p>
+                    Seeking an internship in frontend development to enhance user interfaces. I have skilles in HTML, CSS, and JavaScript. 
+                    My goal is to continuously learn and improve my skills while contributing to exciting projects.</p>
+
+
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"  onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>HTML</span></li>
+                        <li><span>CSS</span></li>
+                        <li><span>JavaScript</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Bachelor of Science(Hons) in information Technology<br>2023 - present</span></li>
+                        <li><span>Complete Advanced Level in Commerce Stream<br>2019</span></li>
+                    </ul>
+                </div>
+                </div>
+            </div> 
+        </div>
     </div>
 </div>
+
+    </div>
+</div>
+<script>
+
+    var tablinks = document.getElementByClassName("tab-links");
+    var tabcontents = document.getElementByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
 
 </body>
 </html>
