@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/429baa35fb.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div id="header">
@@ -43,7 +44,7 @@
 
                 <div class="tab-title">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links"  onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
@@ -66,10 +67,48 @@
 
     </div>
 </div>
+<!-------------------portfolio------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class= "sub-title">My Project</h1>
+        <div class="project-list">
+            <div class="project">
+                    <img src="images/project-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app contents you yo the talented people around the world.
+                        Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                <div class="project">
+                    <img src="images/project-2.png">
+                    <div class="layer">
+                         <h3>Music App</h3>
+                         <p>The app contents you yo the talented people around the world.
+                        Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                <div class="project">
+                    <img src="images/project-3.png">
+                    <div class="layer">
+                        <h3>Online App</h3>
+                        <p>The app contents you yo the talented people around the world.
+                        Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
 <script>
 
-    var tablinks = document.getElementByClassName("tab-links");
-    var tabcontents = document.getElementByClassName("tab-contents");
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
 
     function opentab(tabname){
         for(tablink of tablinks){
